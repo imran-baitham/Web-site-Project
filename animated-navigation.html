@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to create animated navigation in javascript|websoftskills</title>
+  <meta
+    content="Hidden Searach widget example Using html css and  javaScript with source code and video tutorial, 80+ more projects here visit and enhance your skill"
+    name="description">
+  <meta name="keywords" content="preloader page html css,
+    preloader html and css,
+    preloader using html and css,
+    preloader in css,
+    preloader in w3schools,
+    preloader html css code,
+    what is preloader in html,
+    how to use preloader in html,
+    how to apply preloader in html,
+    preloader in javascript,
+    preloader in css,
+    blury preloader in html
+    ">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <script
+    src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sons-of-obsidian&amp;lang=html"
+    defer=""></script>
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="../fontawesome-free-5.12.0-web/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="jsprojects.css">
+</head>
+
+<body>
+  <nav id="innerNav">
+
+  </nav>
+  <!-- =========================================
+                  NavBar Ends  | Expanding Cards Content Start
+      =========================================== -->
+  <main>
+    <article>
+
+      <div class="jsProjectsPage">
+        <div class="content">
+          <section>
+            <div class="head">
+              <h2>Animated navigation in html css Javascript</h2>
+              <p>
+                Most of the developers use Animated navigation in their websites to make it attractive for users and
+                increase its beauty </p>
+            </div>
+            <div class="jsProjectsCard"><br><br>
+              <p>In this article , i will show you how to use linear gradient active when focus on button using html,
+                css and javascript . it is easy to implement in your code</p><br>
+              <h3>Approch to create Animated navigation using html css javascript:</h3><br><br>
+              <ul>
+                <p>in html section you just have to create a Animated navigation with according to your requirements
+                  . In css section add focus using linear gradient make it easy using javacript.</p>
+              </ul>
+              <br>
+              <br>
+              <!-- using iframe in video -->
+              <div class="video">
+                <div class="container-video">
+                  <iframe width="100%" height="400px"
+                    src="">
+                  </iframe>
+                </div>
+              </div>
+              <!-- using iframe in video -->
+              <h2>HTML Code</h2>
+              <div class="code">
+                <code>
+                            <pre class="prettyprint" id="quine">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="en"&gt
+  &lthead&gt
+      &ltmeta charset="UTF-8"&gt
+      &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+      &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+      &lttitle&gtAnimated_Navigation&lt/title&gt
+      &ltlink rel="stylesheet" href="styles.css"&gt
+  &lt/head&gt
+  &ltbody&gt
+      &ltnav class="active" id="nav"&gt
+          &ltul&gt
+              &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
+              &ltli&gt&lta href="#"&gtWorks&lt/a&gt&lt/li&gt
+              &ltli&gt&lta href="#"&gtAbout&lt/a&gt&lt/li&gt
+              &ltli&gt&lta href="#"&gtContact&lt/a&gt&lt/li&gt
+          &lt/ul&gt
+  
+          &ltbutton class="icon" id="toggle"&gt
+              &ltdiv class="line line1"&gt&lt/div&gt
+              &ltdiv class="line line2"&gt&lt/div&gt
+          &lt/button&gt
+      &lt/nav&gt
+      &ltscript src="app.js"&gt&lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+                            </pre>
+                        </code>
+              </div>
+              <!--  html ends  -->
+              <h2>CSS Code</h2>
+              <div class="code">
+                <code>
+                        <pre class="prettyprint" id="quine">
+
+  *{
+      box-sizing: border-box;
+  }
+
+  body{
+      background-color: #eafbff;
+      background-image: linear-gradient(
+          to bottom,
+          #eafbff 0%,
+          #eafbff 50%,
+          #5290f9 50%,
+          #5290f9 100%
+      );
+      color: blue;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+  }
+
+  nav{
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      width: 80px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      border-radius: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: width 0.6s linear;
+  }
+
+  nav.active{
+      width: 350px;
+  }
+
+  nav ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 0;
+      transition: width 0.6s linear;
+      
+  }
+  nav.active ul{
+      width: 100%;
+  }
+  nav ul li {
+      transform: rotateY(0deg);
+      opacity: 0;
+      transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+  nav.active ul li {
+      opacity: 1;
+      transform: rotateY(360deg);
+  }
+
+  nav ul a{
+      position: relative;
+      color: #000;
+      margin: 0 10px;
+      text-decoration: none;
+  }
+  .icon{
+      background-color: #fff;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+      position: relative;
+      height: 30px;
+      width: 30px;
+  }
+  .icon:focus{
+      outline: 0;
+  }
+  .icon .line{
+      background-color: #5290f9;
+      height: 2px;
+      width: 20px;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      transition: transform 0.6s linear;
+  }
+  .icon .line2 {
+      top: auto;
+      bottom: 10px;
+  }
+
+  nav.active .icon .line1 {
+      transform: rotate(-765deg) translateY(5.5px);
+  }
+
+  nav.active .icon .line2 {
+      transform: rotate(765deg) translateY(-5.5px);
+  }
+                        
+                                        </pre>
+                                    </code>
+              </div>
+              <!-- css sends -->
+              <!--  html ends  -->
+              <h2>JavaScript Code</h2>
+              <div class="code">
+                <br>
+                <p>Add style to create preloader in html css to make it more attractive.</p><br>
+                <code>
+                        <pre class="prettyprint" id="quine">
+
+                          
+
+  const toggle = document.getElementById('toggle')
+  const nav = document.getElementById('nav')
+
+  toggle.addEventListener('click', ()=> nav.classList.toggle('active'))
+
+
+                        </pre>
+                    </code>
+              </div>
+              <!-- css sends -->
+            </div>
+          </section>
+        </div>
+        <div class="sidebar">
+        </div>
+      </div>
+    </article>
+  </main>
+  <!-- =========================================
+                  js project poster ends | Footer Start
+      =========================================== -->
+  <footer id="footer">
+
+
+  </footer><!-- End Footer -->
+  </main>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <script src="/jsprojects.js"></script>
+  <script src="../app.js"></script>
+
+</body>
+
+</html>

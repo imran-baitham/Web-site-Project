@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary on how to animate labels when input field is on focus using html css and javascript| 80+ projects</title>
+  <meta content="split landing page example Using html css and  javaScript with source code and video tutorial, 80+ more projects here visit and enhance your skill" name="description">
+  <meta name="keywords" content="
+    form wave animation,
+    form wave animation in css,
+    form animation in css,
+    contact form animation in css,
+    contact form in css,
+    signup form,
+    signup form in css,
+    signin form in css,
+    signin form animation in css,
+    codecamp waves,
+    form waves in css
+
+
+  ">
+
+  
+    <!-- Favicons -->
+    <link href="../assets/img/logo.png" rel="icon">
+  
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sons-of-obsidian&amp;lang=html" defer=""></script>
+  
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+     <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.0-web/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="jsprojects.css">
+  </head>
+  <body>
+    <nav id="innerNav">
+    
+    </nav>
+    <!-- =========================================
+                  NavBar Ends  | Expanding Cards Content Start
+      =========================================== -->
+   <main>
+     <article>
+      
+       <div class="jsProjectsPage">
+            <div class="content">
+                <section>
+                    <div class="head">
+                      <h2>Auto Text Effect in html css Javascript</h2>
+                      <p>
+                        Most of the developers use Auto Text Effect in their websites to make it attractive for users and increase its beuty  </p> </div>
+                        <div class="jsProjectsCard"><br><br>
+                          <p>In this article , i will show you how to use position with labels when focus on input field using html, css and javascript . it is easy to implement in your code</p><br>
+                          <h3>Approch to create Auto Text Effect using html css javascript:</h3><br><br>
+                          <ul>
+                            <p>in html section you just have to create a Auto text effect with input according to your requirements . In css section add focus using position to lables and make it easy using javacript.</p>
+                        </ul>
+                        <br>
+                        <br>
+                        <!-- using iframe in video -->
+                        <div class="video">
+                             <div class="container-video">
+                                   <iframe width="100%" height="400px"
+                                       src="https://imran-baitham.github.io/50-Project-in-50-Days-Pratical/text%20Effect/text.html" >
+                                   </iframe>
+                             </div>  
+                        </div>  
+                    <!-- using iframe in video -->
+                        <h2>HTML Code</h2>
+                        <div class="code">
+                        <code>
+                            <pre class="prettyprint" id="quine">
+     &lt!DOCTYPE html&gt
+     &lthtml lang="en"&gt
+
+     &lthead&gt
+          &ltmeta charset="UTF-8" /&gt
+          &ltmeta http-equiv="X-UA-Compatible" content="IE=edge" /&gt
+          &ltmeta name="viewport" content="width=device-width, initial-scale=1.0" /&gt
+          &lttitle&gtAuto Text Effect&lt/title&gt
+          &ltlink rel="stylesheet" href="speed.css"&gt
+     &lt/head&gt
+
+     &ltbody&gt
+          &lth1 id="text"&gtstarting...&lt/h1&gt
+          &ltdiv&gt
+               &ltlabel for="speed"&gtSpeed:&lt/label&gt
+               &ltinput type="number" name="speed" id="speed" value="1" min="1" max="5" step="1" /&gt
+          &lt/div&gt
+     &ltscript src="speedText.js"&gt&lt/script&gt
+     &lt/body&gt
+
+     &lt/html&gt                      
+                                
+                            </pre>
+                        </code>
+                    </div>
+                    <!--  html ends  -->
+                    <h2>CSS Code</h2>
+                    <br><p>Add style to Auto Text Effect elements to make it more attractive. now on focus we add position to input when input fields are focused</p><br>
+                    <div class="code">
+                    <code>
+                        <pre class="prettyprint" id="quine">
+
+     *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+     }
+
+     body{
+          justify-content: center;
+          align-items: center;
+          background-color: coral;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          overflow: hidden;
+     }
+     div{
+          position: absolute;
+          bottom: 20px;
+          background-color: rgba(0, 0, 0,0.4);
+          padding: 10px 20px;
+          font-size: 18px;
+          color: white;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     input{
+          width: 50px;
+          padding: 5px;
+          border: none;
+          background-color: rgb(250, 164, 132);
+     }
+     input:focus{
+          outline: none;
+     }
+     h1{
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+                                        </pre>
+                                    </code>
+                                </div>
+                                      <!--  html ends  -->
+                                      <h2>JavaScript Code</h2>
+                                      <div class="code">
+                                        <br><p>Select input id using getElementById() to create Auto Text Effect using javascript and The onclick() method is used to handle the click event for element.</p><br>
+                                      <code>
+                                          <pre class="prettyprint" id="quine">
+                  
+     const textEl = document.getElementById("text");
+     const speedEl = document.getElementById("speed");
+     const text = "We Love Programming!";
+     let idx = 1;
+     let speed = 300;
+
+     function writeText() {
+          textEl.innerText = text.slice(0, idx);
+          idx++;
+          if (idx > text.length) {
+               idx = 1;
+          }
+          console.log(idx);
+          setTimeout(writeText, speed);
+          speedEl.addEventListener("input", (e) => (speed = 300 / e.target.value));
+     }
+     writeText();
+                                          </pre>
+                                      </code>
+                                  </div>
+                      </div>
+                </section>
+            </div>
+            <div class="sidebar img-fluid">
+
+            </div>
+       </div>
+    </article>
+    </main>
+              <!-- =========================================
+                  js project poster ends | Footer Start
+      =========================================== -->
+      <footer id="footer">
+
+      </footer><!-- End Footer -->
+    </main>
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="../app.js"></script>
+    <script src="../jsprojects.js"></script>
+  </body>
+</html>
